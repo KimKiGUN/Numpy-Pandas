@@ -710,6 +710,13 @@ emp[['ename', 'sal']][~emp['sal'].between(1000, 3000)]
 
 ```python
 # 7. 직업이 analyst, salesman인 사원의 이름과 직업을 출력하자.
+
+#   데이터 베이스   vs   pandas
+# between ..and..      / Series.between()
+# in                   / isin()
+# is null              / isnull()
+# like                 / apply() 
+
 emp[['ename', 'job']][(emp['job']=='ANALYST')|(emp['job']=='SALESMAN')]
 ```
 
